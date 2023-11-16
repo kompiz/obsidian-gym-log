@@ -1,5 +1,5 @@
 ---
-id: 291088
+id: "291088"
 date: <% tp.date.now("YYYY-MM-DDTHH:mm:ss") %>
 time: <% tp.date.now("HH:mm") %>
 weight: <% await tp.system.prompt("Weight", "", true) %>
@@ -9,10 +9,10 @@ muscle_group: Back
 note: <% await tp.system.prompt("Note", "", true) %>
 reps: 6
 sets: 6
-video_url: "https://www.youtube.com/embed/zq74H17AjpU?feature=oembed"
-instructions: 'This is the instruction for this workout...'
+video_url: 
+instructions: 
 tags:
- - exercise
+  - exercise
 ---
 
 ```dataviewjs

@@ -4,27 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "2a4547e6b698232e",
+        "id": "9da16de9741ed1ec",
         "type": "tabs",
         "children": [
           {
-            "id": "40e625f2fde5a347",
+            "id": "28e57b993dc0563c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Workout list.md",
+                "file": "Workouts/2023-11-16 - Strength/Strength.md",
                 "mode": "preview",
                 "source": true
               }
-            }
-          },
-          {
-            "id": "4f0088373c42ea18",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           }
         ]
@@ -72,6 +64,14 @@
                 "sortOrder": "alphabetical"
               }
             }
+          },
+          {
+            "id": "1aae269fcac2919b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ],
         "currentTab": 2
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Workout list.md",
+                "file": "Workouts/2023-11-16 - Strength/Strength.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Workout list.md",
+                "file": "Workouts/2023-11-16 - Strength/Strength.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Workout list.md"
+                "file": "Workouts/2023-11-16 - Strength/Strength.md"
               }
             }
           }
@@ -155,17 +155,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "40e625f2fde5a347",
+  "active": "28e57b993dc0563c",
   "lastOpenFiles": [
-    "README.md",
     "Workout list.md",
+    "Workouts/2023-11-16 - Strength/Strength.md",
+    "Workouts/2023-11-16 - Strength/Log",
+    "Workouts/2023-11-16 - Strength",
+    "Workouts/2023-11-16 - Strength/Log/5.md",
+    "Workouts/2023-11-16 - Strength/Log/4.md",
+    "Workouts/2023-11-16 - Strength/Log/3.md",
+    "Templates/exercises/Chinups.md",
+    "Templates/exercises/Dumbbell Squats.md",
+    "Templates/exercises/Hammercurls.md",
+    "Templates/exercises/Jefferson Curls.md",
+    "Templates/exercises/Lats - Chins.md",
+    "Workouts/2023-11-16 - Strength/Log/2.md",
+    "Templates/Start.md",
+    "Templates/Workouts/Strength.md",
+    "Workouts/2023-11-16 - Strength/Log/1.md",
+    "Templates/Custom.md",
+    "Templates/Workouts/gym/Workout 2-1 Abs-Back-Biceps-Triceps.md",
     "Workouts/2023-01-16 - Pass 2-1 Abs-Back-Biceps-Triceps/Pass 2-1 Abs-Back-Biceps-Triceps.md",
-    "Templates/exercises/Lats/Lats - Chins.md",
-    "Templates/exercises/Biceps/Biceps - Hammercurl.md",
+    "Workouts/2023-11-16 - Workout 2-1 Abs-Back-Biceps-Triceps/Workout 2-1 Abs-Back-Biceps-Triceps.md",
+    "Workouts/2023-11-16 - Workout 2-1 Abs-Back-Biceps-Triceps/Log",
+    "Workouts/2023-11-16 - Workout 2-1 Abs-Back-Biceps-Triceps",
+    "README.md",
     "Templates/Workouts/gym/Pass 2-1 Abs-Back-Biceps-Triceps.md",
     "Workouts/2023-01-16 - Pass 2-1 Mage-Rygg-Biceps-Triceps/Pass 2-1 Mage-Rygg-Biceps-Triceps.md",
-    "Templates/Custom.md",
-    "Templates/Start.md",
     "Templates/Egen.md"
   ]
 }

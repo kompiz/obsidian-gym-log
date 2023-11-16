@@ -1,13 +1,12 @@
 ---
-workout_id: FE53-EE
 id: 293271
-date: 2023-01-16T22:55:40
-time: 22:55
-weight: 10
-effort: 3
-exercise: Biceps - Hammercurl
+date: <% tp.date.now("YYYY-MM-DDTHH:mm:ss") %>
+time: <% tp.date.now("HH:mm") %>
+weight: <% await tp.system.prompt("Weight", "", true) %>
+effort: <% await tp.system.suggester(["1 (easy)", "2", "3", "4", "5 (failure)"], ["1", "2", "3", "4", "5"]) %>
+exercise: Hammercurls
 muscle_group: Biceps
-note: 
+note: <% await tp.system.prompt("Note", "", true) %>
 reps: 6
 sets: 6
 video_url: "https://www.youtube.com/embed/xb6XLeWUVr8?feature=oembed"

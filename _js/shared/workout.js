@@ -70,7 +70,7 @@ class workout
 				return a.index - b.index;
 		});
 
-		// Create new array with template exercices that contains last performed duration
+		// Create new array with template exercises that contains last performed duration
 		var templateExercies = [];
 		for(var e of remainingExercises)
 		{
@@ -96,7 +96,7 @@ class workout
 			templateExercies.push(['[[' + e.file.path + '|' + e['exercise'] + ']]', e["muscle_group"], lastPerformed["weight"], lastPerformed["effort"]]);
 		}
 
-		n.dv.table(["Exercice", "💪🏻-group", "🏋🏼", "😥"], templateExercies);
+		n.dv.table(["Exercise", "💪🏻-group", "🏋🏼", "😥"], templateExercies);
 		    //.sort( e=> e['muscle_group'], 'desc'));
 	}
 
@@ -143,7 +143,7 @@ class workout
 			i++;
 		}
 
-		n.dv.table(["Exercice", "🏋🏼", "⏱", "🗒"], performedExercises);
+		n.dv.table(["Exercise", "🏋🏼", "⏱", "🗒"], performedExercises);
 
 		if(lastTimeStamp != null && firstTimeStamp != null)
 		{
@@ -276,7 +276,7 @@ class workout
 					    {
 					        title: function(context)
 					        {
-						        return 'Exercice:';
+						        return 'Exercise:';
 					        },
 					        label: function(context)
 					        {

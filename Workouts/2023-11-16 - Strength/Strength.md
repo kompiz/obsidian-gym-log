@@ -1,11 +1,11 @@
 ---
-id: FE53-EE
-date: 2023-01-16 22:54:04
-workout_title: Pass 2:1 Mage-Rygg-Biceps-Triceps
-exercises: [293271, 291088]
-workout_order: [293271, 291088]
-workout: 2-1
-type: 2
+id: 2923-10
+date: 2023-11-16 14:57:34
+workout_title: Strength block
+exercises: [1001, 1002, 1003]
+workout_order: [1001, 1002, 1003]
+workout: Strength block
+type: 1
 sub_type: 1
 tags:
  - workout

@@ -1,10 +1,10 @@
 ---
 date: <% tp.date.now("YYYY-MM-DD HH:mm:ss") %>
-workout_title: Workout 2:1 Mage-Rygg-Biceps-Triceps
-exercises: [293271, 291088]
-workout_order: [293271, 291088]
-workout: 2-1
-type: 2
+workout_title: Strength block
+exercises: [1001, 1002, 1003]
+workout_order: [1001, 1002, 1003]
+workout: Strength block
+type: 1
 sub_type: 1
 tags:
  - workout
