@@ -26,14 +26,16 @@ module.exports = async function listFiles(params) {
         }
     }
 
+    function sortworkout(a, b) {
+        return a.basename.localeCompare(b.basename, undefined, {numeric: true, sensitivity: 'base'});
+    }
+
     function sortworkout(a, b)
     {
         // "Natural" sorting
         return a.basename.localeCompare(b.basename, undefined, {numeric: true, sensitivity: 'base'})       
     }
 
-    workouts = [].concat(gym);
-    
     // Display files to select
     const notesDisplay = await params.quickAddApi.suggester(
         (file) => file.basename,

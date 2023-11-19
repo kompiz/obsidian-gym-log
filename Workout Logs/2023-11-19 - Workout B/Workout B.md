@@ -1,6 +1,6 @@
 ---
-id: 74C8-89
-date: 2023-11-19 12:26:56
+id: 8274-31
+date: 2023-11-19 16:29:01
 workout_title: Strength block
 exercises: [1004, 1001, 1002, 1003]
 workout_order: [1004, 1001, 1002, 1003]
@@ -93,7 +93,7 @@ color green
 ```button
 name Add Current Time
 type line(1) text
-action 12:26:56
+action 16:29:01
 replace [1,1]
 templater true
 ```

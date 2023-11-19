@@ -3,7 +3,7 @@ id: 1003
 date: <% tp.date.now("YYYY-MM-DDTHH:mm:ss") %>
 time: <% tp.date.now("HH:mm") %>
 weight: <% await tp.system.prompt("Weight", "", true) %>
-effort: <% await tp.system.suggester(["1 (easy)", "2", "3", "4", "5 (failure)"], ["1", "2", "3", "4", "5"]) %>
+RPE: <% await tp.system.suggester(["1 (easy)", "2", "3", "4", "5 (failure)"], ["1", "2", "3", "4", "5"]) %>
 exercise: Jefferson Curls
 muscle_group: Back
 note: <% await tp.system.prompt("Note", "", true) %>

@@ -9,10 +9,10 @@ class exercise
 		let workout_id = metadata.frontmatter['workout_id'];
 
 		let weight = metadata.frontmatter['weight'];
-		let effort = metadata.frontmatter['effort'];
+		let RPE = metadata.frontmatter['RPE'];
 		let note = metadata.frontmatter['note'];
 
-		if((weight != null || effort != null) && workout_id != null)
+		if((weight != null || RPE != null) && workout_id != null)
 		{
 			n.dv.header(2, "Exercise log:")
 			if(weight != null)
@@ -22,10 +22,10 @@ class exercise
 				n.dv.el("br", "");
 			}
 
-			if(effort != null)
+			if(RPE != null)
 			{
 				n.dv.el('b', 'Effort: ');
-				n.dv.span(effort.toString());
+				n.dv.span(RPE.toString());
 				n.dv.el("br", "");
 			}
 
@@ -80,7 +80,7 @@ class exercise
 		const datum = performedExercises.map(e=> moment(new Date(e['date'])).format('YYYY-MM-DD'));
 
 		const weights = performedExercises.map(e=> e['weight']);
-		const efforts = performedExercises.map(e=> e['effort']);
+		const RPEs = performedExercises.map(e=> e['RPE']);
 
 		let weight_ds = {
 		      label: 'Weight',
@@ -96,7 +96,7 @@ class exercise
 		  datasets: [
 		    {
 		      label: 'Effort',
-		      data: efforts,
+		      data: RPEs,
 		      borderColor: [ 'rgb(232, 15, 136)' ],
 		      //backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue, 0.5),
 		      borderWidth: 3,
@@ -245,7 +245,7 @@ class exercise
 			if(hasWeights)
 				exercise.push(e["weight"] + ' kg');
 			// Effort
-			exercise.push(e['effort']);
+			exercise.push(e['RPE']);
 			// Note
 			exercise.push(e['note']);
 			lastExercises.push(exercise);

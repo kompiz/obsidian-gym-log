@@ -93,7 +93,7 @@ class workout
 			if(lastPerformed == null)
 				lastPerformed = {};
 
-			templateExercies.push(['[[' + e.file.path + '|' + e['exercise'] + ']]', e["muscle_group"], lastPerformed["weight"], lastPerformed["effort"]]);
+			templateExercies.push(['[[' + e.file.path + '|' + e['exercise'] + ']]', e["muscle_group"], lastPerformed["weight"], lastPerformed["RPE"]]);
 		}
 
 		n.dv.table(["Exercise", "💪🏻-group", "🏋🏼", "😥"], templateExercies);
@@ -182,14 +182,14 @@ class workout
 			});
 
 		const datum = performedExercises.map( (e) => { return moment(new Date(e.frontmatter['date'])); });
-		const efforts = performedExercises.map( (e) =>{ return e.frontmatter['effort']; });
+		const RPEs = performedExercises.map( (e) =>{ return e.frontmatter['RPE']; });
 
 		const datasets = {
 		  labels: datum,
 		  datasets: [
 		    {
 		      label: 'Effort',
-		      data: efforts,
+		      data: RPEs,
 		      borderColor: [ 'rgb(232, 15, 136)' ],
 		      //backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue, 0.5),
 		      borderWidth: 3,
@@ -286,7 +286,7 @@ class workout
 							afterLabel: function(context)
 							{
 								let e = performedExercises[context.dataIndex];
-								return ' Effort: ' + e.frontmatter['effort'];
+								return ' Effort: ' + e.frontmatter['RPE'];
 							}
 					    }
 				    }
