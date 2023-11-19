@@ -7,9 +7,9 @@ There is a basic example workout with two exercises included.
 There are three different views/pages:
 - Overview / a list of workouts that have been performed. This includes a heatmap.
 - A workout view. Includes a list of remaining and performed exercies. 
-  - Has en effort graph at the bottom
+  - Has an RPE graph at the bottom
 - An exercise view that shows instructions and the last few times this exercise was performed.
-  - Has en effort/weight graph at the bottom
+  - Has an RPE/weight graph at the bottom
   
 ## Usage instructions
 1. Open the "Workout list" note

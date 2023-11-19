@@ -43,6 +43,6 @@ const {workout} = customJS;
 const note = {dv: dv, container: this.container, window: window};
 
 workout.renderPerformed(note);
-workout.renderEffortChart(note);
+workout.renderRPEChart(note);
 
 ```

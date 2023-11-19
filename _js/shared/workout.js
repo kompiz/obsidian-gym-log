@@ -93,7 +93,7 @@ class workout
 			if(lastPerformed == null)
 				lastPerformed = {};
 
-			templateExercies.push(['[[' + e.file.path + '|' + e['exercise'] + ']]', e["muscle_group"], lastPerformed["weight"], lastPerformed["effort"]]);
+			templateExercies.push(['[[' + e.file.path + '|' + e['exercise'] + ']]', e["muscle_group"], lastPerformed["weight"], lastPerformed["RPE"]]);
 		}
 
 		n.dv.table(["Exercise", "💪🏻-group", "🏋🏼", "😥"], templateExercies);
@@ -158,7 +158,7 @@ class workout
 		}
 	}
 
-	renderEffortChart(n)
+	renderRPEChart(n)
 	{
 		const {utils} = customJS;
 		const data = n.dv.current()
@@ -167,7 +167,7 @@ class workout
 		let workoutId = metadata.frontmatter['id'];
 		let allFiles = app.vault.getMarkdownFiles();
 
-		n.dv.header(2, "Effort profile")
+		n.dv.header(2, "RPE profile")
 
 		let performedExercises = utils.filterFiles((fm, tags) => { return tags.includes('#exercise') && fm['workout_id'] === workoutId;}, allFiles);
 		performedExercises = utils.addTagsAndFrontmatter(performedExercises);
@@ -182,14 +182,14 @@ class workout
 			});
 
 		const datum = performedExercises.map( (e) => { return moment(new Date(e.frontmatter['date'])); });
-		const efforts = performedExercises.map( (e) =>{ return e.frontmatter['effort']; });
+		const RPEs = performedExercises.map( (e) =>{ return e.frontmatter['RPE']; });
 
 		const datasets = {
 		  labels: datum,
 		  datasets: [
 		    {
-		      label: 'Effort',
-		      data: efforts,
+		      label: 'RPE',
+		      data: RPEs,
 		      borderColor: [ 'rgb(232, 15, 136)' ],
 		      //backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue, 0.5),
 		      borderWidth: 3,
@@ -217,16 +217,16 @@ class workout
 				title:
 				{
 					display: true,
-					text: 'Effort'
+					text: 'RPE'
 				},
 				min: 0,
-				max: 6,
+				max: 11,
 				ticks:
 				{
-					// Display only if between 1 and 5
+					// Display only if between 1 and 10
 					callback: function(value, index, ticks)
 					{
-						return value > 0 && value < 6 ? value : '';
+						return value > 0 && value < 11 ? value : '';
 					}
 				},
 				type: 'linear',
@@ -286,7 +286,7 @@ class workout
 							afterLabel: function(context)
 							{
 								let e = performedExercises[context.dataIndex];
-								return ' Effort: ' + e.frontmatter['effort'];
+								return ' RPE: ' + e.frontmatter['RPE'];
 							}
 					    }
 				    }

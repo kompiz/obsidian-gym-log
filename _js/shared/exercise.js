@@ -9,10 +9,10 @@ class exercise
 		let workout_id = metadata.frontmatter['workout_id'];
 
 		let weight = metadata.frontmatter['weight'];
-		let effort = metadata.frontmatter['effort'];
+		let RPE = metadata.frontmatter['RPE'];
 		let note = metadata.frontmatter['note'];
 
-		if((weight != null || effort != null) && workout_id != null)
+		if((weight != null || RPE != null) && workout_id != null)
 		{
 			n.dv.header(2, "Exercise log:")
 			if(weight != null)
@@ -22,10 +22,10 @@ class exercise
 				n.dv.el("br", "");
 			}
 
-			if(effort != null)
+			if(RPE != null)
 			{
-				n.dv.el('b', 'Effort: ');
-				n.dv.span(effort.toString());
+				n.dv.el('b', 'RPE: ');
+				n.dv.span(RPE.toString());
 				n.dv.el("br", "");
 			}
 
@@ -48,7 +48,7 @@ class exercise
 			n.dv.el('p', '<iframe title="' + metadata.frontmatter['exercise'] + '" src="' + video_url + '" height="113" width="200" allowfullscreen="" allow="fullscreen" style="aspect-ratio: 1.76991 / 1; width: 100%; height: 100%;"></iframe>')
 	}
 
-	renderEffortWeightChart(n)
+	renderRPEWeightChart(n)
 	{
 		const data = n.dv.current()
 		let metadata = app.metadataCache.getFileCache(n.dv.current().file);
@@ -80,7 +80,7 @@ class exercise
 		const datum = performedExercises.map(e=> moment(new Date(e['date'])).format('YYYY-MM-DD'));
 
 		const weights = performedExercises.map(e=> e['weight']);
-		const efforts = performedExercises.map(e=> e['effort']);
+		const RPEs = performedExercises.map(e=> e['RPE']);
 
 		let weight_ds = {
 		      label: 'Weight',
@@ -95,8 +95,8 @@ class exercise
 		  labels: datum,
 		  datasets: [
 		    {
-		      label: 'Effort',
-		      data: efforts,
+		      label: 'RPE',
+		      data: RPEs,
 		      borderColor: [ 'rgb(232, 15, 136)' ],
 		      //backgroundColor: Utils.transparentize(Utils.CHART_COLORS.blue, 0.5),
 		      borderWidth: 3,
@@ -149,16 +149,16 @@ class exercise
 				title:
 				{
 					display: true,
-					text: 'Effort'
+					text: 'RPE'
 				},
 				min: 0,
-				max: 6,
+				max: 11,
 				ticks:
 				{
 					// Include a dollar sign in the ticks
 					callback: function(value, index, ticks)
 					{
-						return value > 0 && value < 6 ? value : '';
+						return value > 0 && value < 11 ? value : '';
 					}
 				},
 				type: 'linear',
@@ -244,8 +244,8 @@ class exercise
 			// Weight
 			if(hasWeights)
 				exercise.push(e["weight"] + ' kg');
-			// Effort
-			exercise.push(e['effort']);
+			// RPE
+			exercise.push(e['RPE']);
 			// Note
 			exercise.push(e['note']);
 			lastExercises.push(exercise);

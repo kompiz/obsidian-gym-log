@@ -3,7 +3,7 @@ id: 293271
 date: <% tp.date.now("YYYY-MM-DDTHH:mm:ss") %>
 time: <% tp.date.now("HH:mm") %>
 weight: <% await tp.system.prompt("Weight", "", true) %>
-effort: <% await tp.system.suggester(["1 (easy)", "2", "3", "4", "5 (failure)"], ["1", "2", "3", "4", "5"]) %>
+RPE: <% await tp.system.suggester(["1 (easy)", "2", "3", "4", "5 (failure)"], ["1", "2", "3", "4", "5"]) %>
 exercise: Hammercurls
 muscle_group: Biceps
 note: <% await tp.system.prompt("Note", "", true) %>
@@ -21,6 +21,6 @@ const {exercise} = customJS;
 const note = {dv: dv, container: this.container, window: window};
 
 exercise.renderDescription(note);
-exercise.renderEffortWeightChart(note);
+exercise.renderRPEWeightChart(note);
 
 ```
