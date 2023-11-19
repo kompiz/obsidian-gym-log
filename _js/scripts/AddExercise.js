@@ -28,7 +28,7 @@ module.exports = async function listFiles(params) {
         const startEx = filterFiles((fm, tags) => {return tags.includes('#start') && fm['workout_id'] == null}, allFiles);
         exercises.push(startEx[0]);
     }
-    else // add workout exercises that has not been performed
+    else // add workout exercises that have not been performed
     {
         // Get all exercises for this workout
         const workoutEx = filterFiles((fm, tags) =>{

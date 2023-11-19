@@ -20,13 +20,13 @@ workout.renderHeader(note);
 ```
 
 ## Remaining Exercises
-```dataviewjs
 
-const {workout} = customJS;
-const note = {dv: dv, container: this.container, window: window};
+```dataviewjs 
 
-workout.renderRemaining(note);
+const {workout} = customJS; 
+const note = {dv: dv, container: this.container, window: window}; 
 
+workout.renderRemaining(note); 
 ```
 
 ## Performed Exercises
@@ -43,6 +43,6 @@ const {workout} = customJS;
 const note = {dv: dv, container: this.container, window: window};
 
 workout.renderPerformed(note);
-workout.renderEffortChart(note);
+workout.renderRPEChart(note);
 
 ```

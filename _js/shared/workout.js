@@ -28,6 +28,7 @@ class workout
 		let workout_order = metadata.frontmatter['workout_order'];
 		// Get id of this workout
 		let workoutId = metadata.frontmatter['id'];
+    let totalSetsByExercise = {};
 		let allExercises = n.dv.pages('#exercise');
 		let performedExercisesForThisWorkout = [];
 		let allPerformedExercises = [];
@@ -36,6 +37,14 @@ class workout
 		// Workout with old format -> no remaining exercises!
 		if(workoutExerciseIds == null)
 			allExercises = []
+
+    for (let e of allExercises) {
+        let metadata = app.metadataCache.getFileCache(e.file);
+        let exerciseId = metadata.frontmatter['id'];
+        if (workoutExerciseIds.includes(exerciseId)) {
+            totalSetsByExercise[exerciseId] = metadata.frontmatter['sets'];
+        }
+    }
 
 		for(var e of allExercises)
 		{
@@ -93,10 +102,16 @@ class workout
 			if(lastPerformed == null)
 				lastPerformed = {};
 
-			templateExercise.push(['[[' + e.file.path + '|' + e['exercise'] + ']]', e["muscle_group"], lastPerformed["weight"], lastPerformed["RPE"]]);
+      templateExercise.push([
+          '[[' + e.file.path + '|' + e['exercise'] + ']]', 
+          totalSetsByExercise[e['id']] || 0, 
+          lastPerformed["weight"], 
+          lastPerformed["RPE"]
+      ]);
+  
 		}
 
-		n.dv.table(["Exercise", "💪🏻-group", "🏋🏼", "😥"], templateExercise);
+		n.dv.table(["Exercise", "Total sets", "🏋🏼", "RPE"], templateExercise);
 		    //.sort( e=> e['muscle_group'], 'desc'));
 	}
 
