@@ -1,11 +1,10 @@
 ---
-date: 2023-11-18
+id: 4594-A0
 date:
   "{ date:YYYY-MM-DD }": 
 workout: Workout A
 tags:
   - "#workout"
-id: foo
 ---
 
 # Workout A
