@@ -32,12 +32,7 @@ module.exports = async function listFiles(params) {
         return a.basename.localeCompare(b.basename, undefined, {numeric: true, sensitivity: 'base'})       
     }
 
-    hemmagym = workouts.filter(w => w.basename.includes('Hemmagym')).sort(sortworkout);
-    gym = workouts.filter(w => !w.basename.includes('Hemmagym')).sort(sortworkout);
-
     workouts = [].concat(gym);
-    // Hemmagym should come last
-    workouts = workouts.concat(hemmagym);
     
     // Display files to select
     const notesDisplay = await params.quickAddApi.suggester(
@@ -52,7 +47,7 @@ module.exports = async function listFiles(params) {
     let tmp = app.vault.getAbstractFileByPath(activeFile.path).parent;
     let now = moment(new Date());
     let nameWoExt = templateFile.name.replace('.md', '')
-    let targetPath = 'Workout Logs/' + now.format("YYYY-MM-DD") + ' - ' + nameWoExt;
+    let targetPath = 'Workout logs/' + now.format("YYYY-MM-DD") + ' - ' + nameWoExt;
     var folderExists = await app.vault.exists(targetPath);
     if(!folderExists)
     {

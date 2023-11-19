@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Workout Logs/2023-11-19 - Workout B/Workout B.md",
-                "mode": "source",
+                "file": "Start workout.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Workout Logs/2023-11-19 - Workout B/Workout B.md",
+                "file": "Start workout.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Workout Logs/2023-11-19 - Workout B/Workout B.md",
+                "file": "Start workout.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Workout Logs/2023-11-19 - Workout B/Workout B.md"
+                "file": "Start workout.md"
               }
             }
           }
@@ -149,6 +149,15 @@
   },
   "active": "b79e2cc00a069275",
   "lastOpenFiles": [
+    "_js/scripts/AddWorkout.js~",
+    "Workout Logs/2023-11-19 - Workout B/Workout B.md",
+    "Workout logs/2023-11-19 - Workout B/Workout B.md",
+    "Workout logs/2023-11-19 - Workout B/Log",
+    "Workout logs/2023-11-19 - Workout A/Workout A.md",
+    "Workout logs/2023-11-19 - Workout A/Log",
+    "Workout logs/2023-11-19 - Workout B",
+    "Workout logs/2023-11-19 - Workout A",
+    "Workout logs",
     "Start workout.md",
     "Workout Logs/2023-11-19 - Workout A/Workout A.md",
     "Workout Logs/2023-11-19 - Workout A/Log",
@@ -156,18 +165,12 @@
     "Templates/exercise.md",
     "Templates/Exercises/Chinups.md",
     "Templates/Exercises/BicepCurls.md",
-    "Workout Logs/2023-11-19 - Workout B/Workout B.md",
     "Workout Logs/2023-11-19 - Workout B/Log",
     "Workout Logs/2023-11-19 - Workout B",
     "Workout Logs/2023-11-19 - Workout A.md",
     "Workout Logs/2023-11-19 - Workout B 1.md",
     "Workout Logs/2023-11-19 - Workout B.md",
     "_js/shared/workout.js",
-    "_js/shared/utils.js",
-    "_js/shared/exercise.js",
-    "_js/scripts/showFilesWithTag.js",
-    "_js/scripts/Helloworld.js",
-    "_js/scripts/HangboardTimer.js",
     "Workout Logs/2023-11-19 - Workout A 1.md",
     "Workout Logs/2023-11-19 - Workout B 2.md",
     "Workouts/2023-11-19 - Workout A/Workout A.md",
@@ -182,9 +185,6 @@
     "Log.md",
     "Foo.md",
     "Workouts Logs/2023-11-18 - Workout A.md",
-    "Workouts/2023-11-18 - Workout A 3.md",
-    "Templates/workouts/Workout A.md",
-    "Workouts/2023-11-18 - Workout A.md",
     "Untitled.canvas"
   ]
 }
