@@ -71,7 +71,7 @@ class workout
 		});
 
 		// Create new array with template exercises that contains last performed duration
-		var templateExercies = [];
+		var templateExercise = [];
 		for(var e of remainingExercises)
 		{
 			//let metadata = app.metadataCache.getFileCache(e.file);
@@ -93,10 +93,10 @@ class workout
 			if(lastPerformed == null)
 				lastPerformed = {};
 
-			templateExercies.push(['[[' + e.file.path + '|' + e['exercise'] + ']]', e["muscle_group"], lastPerformed["weight"], lastPerformed["RPE"]]);
+			templateExercise.push(['[[' + e.file.path + '|' + e['exercise'] + ']]', e["muscle_group"], lastPerformed["weight"], lastPerformed["RPE"]]);
 		}
 
-		n.dv.table(["Exercise", "💪🏻-group", "🏋🏼", "😥"], templateExercies);
+		n.dv.table(["Exercise", "💪🏻-group", "🏋🏼", "😥"], templateExercise);
 		    //.sort( e=> e['muscle_group'], 'desc'));
 	}
 
