@@ -1,21 +1,21 @@
 {
   "main": {
-    "id": "425e82abaead3523",
+    "id": "a7339b93af3e8dc4",
     "type": "split",
     "children": [
       {
-        "id": "9da16de9741ed1ec",
+        "id": "0c8fd14e94892028",
         "type": "tabs",
         "children": [
           {
-            "id": "28e57b993dc0563c",
+            "id": "b79e2cc00a069275",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Workouts/2023-11-16 - Strength/Strength.md",
+                "file": "Workout Logs/2023-11-19 - Workout A.md",
                 "mode": "preview",
-                "source": true
+                "source": false
               }
             }
           }
@@ -25,15 +25,25 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "878a6b80c304a821",
+    "id": "d9c976a8444985dc",
     "type": "split",
     "children": [
       {
-        "id": "c6ef61a71856d155",
+        "id": "128bb98cea02e50c",
         "type": "tabs",
         "children": [
           {
-            "id": "0a47b43e5f0e19b8",
+            "id": "fd5e55d0addfa02d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9ab43274fe140ff2",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -48,53 +58,34 @@
             }
           },
           {
-            "id": "f6bf75bc82d922c6",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {}
-            }
-          },
-          {
-            "id": "7b33950de697b8a5",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
-            "id": "1aae269fcac2919b",
+            "id": "d2b499f80a74cd9a",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
   "right": {
-    "id": "285bd5590c21a41e",
+    "id": "2d2d55b5d731d391",
     "type": "split",
     "children": [
       {
-        "id": "e7ae938dbfb1e4b0",
+        "id": "1b97bec799a37caa",
         "type": "tabs",
         "children": [
           {
-            "id": "2a94417ca3e0df29",
+            "id": "2953e6c3ecb6087b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Workouts/2023-11-16 - Strength/Strength.md",
+                "file": "Workout Logs/2023-11-19 - Workout A.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -106,19 +97,19 @@
             }
           },
           {
-            "id": "5b35ec86eefe9ec6",
+            "id": "c1735569426b101a",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Workouts/2023-11-16 - Strength/Strength.md",
+                "file": "Workout Logs/2023-11-19 - Workout A.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "392feecd8af425e4",
+            "id": "433f6a7df8bad703",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -129,12 +120,12 @@
             }
           },
           {
-            "id": "e6d13a203f2ea736",
+            "id": "b1af0bfec82cb251",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Workouts/2023-11-16 - Strength/Strength.md"
+                "file": "Workout Logs/2023-11-19 - Workout A.md"
               }
             }
           }
@@ -147,41 +138,53 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "templater-obsidian:Templater": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
-      "command-palette:Open command palette": false
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "28e57b993dc0563c",
+  "active": "b79e2cc00a069275",
   "lastOpenFiles": [
-    "Workout list.md",
-    "Workouts/2023-11-16 - Strength/Strength.md",
-    "Workouts/2023-11-16 - Strength/Log",
-    "Workouts/2023-11-16 - Strength",
-    "Workouts/2023-11-16 - Strength/Log/5.md",
-    "Workouts/2023-11-16 - Strength/Log/4.md",
-    "Workouts/2023-11-16 - Strength/Log/3.md",
-    "Templates/exercises/Chinups.md",
-    "Templates/exercises/Dumbbell Squats.md",
-    "Templates/exercises/Hammercurls.md",
-    "Templates/exercises/Jefferson Curls.md",
-    "Templates/exercises/Lats - Chins.md",
-    "Workouts/2023-11-16 - Strength/Log/2.md",
-    "Templates/Start.md",
-    "Templates/Workouts/Strength.md",
-    "Workouts/2023-11-16 - Strength/Log/1.md",
-    "Templates/Custom.md",
-    "Templates/Workouts/gym/Workout 2-1 Abs-Back-Biceps-Triceps.md",
-    "Workouts/2023-01-16 - Pass 2-1 Abs-Back-Biceps-Triceps/Pass 2-1 Abs-Back-Biceps-Triceps.md",
-    "Workouts/2023-11-16 - Workout 2-1 Abs-Back-Biceps-Triceps/Workout 2-1 Abs-Back-Biceps-Triceps.md",
-    "Workouts/2023-11-16 - Workout 2-1 Abs-Back-Biceps-Triceps/Log",
-    "Workouts/2023-11-16 - Workout 2-1 Abs-Back-Biceps-Triceps",
-    "README.md",
-    "Templates/Workouts/gym/Pass 2-1 Abs-Back-Biceps-Triceps.md",
-    "Workouts/2023-01-16 - Pass 2-1 Mage-Rygg-Biceps-Triceps/Pass 2-1 Mage-Rygg-Biceps-Triceps.md",
-    "Templates/Egen.md"
+    "Templates/workouts/Workout B.md",
+    "Start workout.md",
+    "Workout Logs/2023-11-19 - Workout A.md",
+    "Workout Logs/2023-11-18 - Workout A.md",
+    "Workout Logs",
+    "Start.md",
+    "awerae eaf.md",
+    "Log.md",
+    "Foo.md",
+    "Workouts Logs/2023-11-18 - Workout A.md",
+    "Workouts Logs",
+    "Workouts/2023-11-18 - Workout A 3.md",
+    "Templates/Exercises/Chinups.md",
+    "Templates/Exercises/RotatorCuffCurls.md",
+    "Templates/workouts/Workout A.md",
+    "Templates/exercise.md",
+    "Workouts/2023-11-18 - Workout A.md",
+    "Workouts/2023-11-18 - Workout A 1.md",
+    "Workouts/2023-11-18 - Workout A 2.md",
+    "_js/scripts/AddExercise.js",
+    "_js/scripts/AddExercise-orig.js",
+    "_js/scripts/AddExercise2.js",
+    "Templates/Exercises/BicepCurls.md",
+    "Untitled.canvas",
+    "Workouts/2023-11-18 - 2023-11-18 - Workout A.md",
+    "_js/shared/workout.js",
+    "_js/shared/utils.js",
+    "_js/shared/exercise.js",
+    "_js/shared",
+    "Templates/workouts",
+    "Templates/Workouts/Workout A.md",
+    "Exercises/RotatorCuffCurls.md",
+    "Exercises/BicepCurls.md",
+    "Exercises/Rotator cuff curls.md",
+    "_js.md",
+    "Exercises/Bicep curls.md",
+    "Exercises/Chinups.md"
   ]
 }

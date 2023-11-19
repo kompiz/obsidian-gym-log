@@ -1,11 +1,10 @@
 [
-  "dataview",
-  "quickadd",
-  "media-extended",
-  "templater-obsidian",
   "buttons",
-  "obsidian-charts",
+  "customjs",
+  "dataview",
   "heatmap-calendar",
+  "obsidian-charts",
   "tag-wrangler",
-  "customjs"
+  "templater-obsidian",
+  "quickadd"
 ]

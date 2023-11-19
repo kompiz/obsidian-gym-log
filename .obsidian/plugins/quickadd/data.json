@@ -1,44 +1,44 @@
 {
   "choices": [
     {
-      "id": "d5df32b0-6a04-481d-9a8d-b9bd1b2f0ea7",
-      "name": "Log",
+      "id": "2750f95a-e8e1-41fa-802c-3599388902f6",
+      "name": "Start workout",
       "type": "Macro",
       "command": true,
-      "macroId": "aebdc4b3-6ef2-4295-b556-c67abc77ecb9"
+      "macroId": "45afac74-0da5-476d-a689-c3f8c7d64760"
     },
     {
-      "id": "b15a6358-38c0-47f6-afa2-45778dc5353d",
-      "name": "Add workout",
+      "id": "366e4a17-7924-46ac-83d3-95cbfa10f39e",
+      "name": "Start exercise",
       "type": "Macro",
       "command": true,
-      "macroId": "14dd00dd-b788-416e-b37c-e464b19bb5bf"
+      "macroId": "991b411b-876c-48a9-955a-f623402074e8"
     }
   ],
   "macros": [
     {
-      "name": "Add exercise",
-      "id": "aebdc4b3-6ef2-4295-b556-c67abc77ecb9",
+      "name": "Start workout",
+      "id": "45afac74-0da5-476d-a689-c3f8c7d64760",
       "commands": [
         {
-          "name": "AddExercise",
+          "name": "AddWorkout",
           "type": "UserScript",
-          "id": "432fcd44-330b-4389-acf7-473948cc8b55",
-          "path": "_js/scripts/AddExercise.js",
+          "id": "cc268e81-b6b9-4436-88df-6eb3e678b294",
+          "path": "_js/scripts/AddWorkout.js",
           "settings": {}
         }
       ],
       "runOnStartup": false
     },
     {
-      "name": "Add workout",
-      "id": "14dd00dd-b788-416e-b37c-e464b19bb5bf",
+      "name": "Start exercise",
+      "id": "991b411b-876c-48a9-955a-f623402074e8",
       "commands": [
         {
-          "name": "AddWorkout",
+          "name": "AddExercise",
           "type": "UserScript",
-          "id": "5764cc8a-5e37-477f-87c7-f1d8ff04c634",
-          "path": "_js/scripts/AddWorkout.js",
+          "id": "6ed888bc-c301-43d3-83e0-0222b912e86b",
+          "path": "_js/scripts/AddExercise.js",
           "settings": {}
         }
       ],
@@ -46,5 +46,23 @@
     }
   ],
   "inputPrompt": "single-line",
-  "devMode": false
+  "devMode": false,
+  "templateFolderPath": "",
+  "announceUpdates": true,
+  "version": "1.6.0",
+  "disableOnlineFeatures": true,
+  "ai": {
+    "OpenAIApiKey": "",
+    "defaultModel": "Ask me",
+    "defaultSystemPrompt": "As an AI assistant within Obsidian, your primary goal is to help users manage their ideas and knowledge more effectively. Format your responses using Markdown syntax. Please use the [[Obsidian]] link format. You can write aliases for the links by writing [[Obsidian|the alias after the pipe symbol]]. To use mathematical notation, use LaTeX syntax. LaTeX syntax for larger equations should be on separate lines, surrounded with double dollar signs ($$). You can also inline math expressions by wrapping it in $ symbols. For example, use $$w_{ij}^{\text{new}}:=w_{ij}^{\text{current}}+etacdotdelta_jcdot x_{ij}$$ on a separate line, but you can write \"($eta$ = learning rate, $delta_j$ = error term, $x_{ij}$ = input)\" inline.",
+    "promptTemplatesFolderPath": "",
+    "showAssistant": true
+  },
+  "migrations": {
+    "migrateToMacroIDFromEmbeddedMacro": true,
+    "useQuickAddTemplateFolder": true,
+    "incrementFileNameSettingMoveToDefaultBehavior": true,
+    "mutualExclusionInsertAfterAndWriteToBottomOfFile": true,
+    "setVersionAfterUpdateModalRelease": true
+  }
 }

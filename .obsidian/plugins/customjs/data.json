@@ -1,4 +1,6 @@
 {
   "jsFiles": "",
-  "jsFolder": "_js/shared"
+  "jsFolder": "_js/shared",
+  "startupScriptNames": [],
+  "registeredInvocableScriptNames": []
 }
